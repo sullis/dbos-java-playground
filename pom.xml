@@ -6,11 +6,9 @@
   <groupId>io.github.sullis</groupId>
   <artifactId>dbos-java-playground</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <packaging>jar</packaging>
 
-  <name>dbos-java-playground</name>
-  <description>A template project for Java development with Maven</description>
-  <url>https://github.com/sullis/java-maven-template</url>
+  <description>DBOS Java playground</description>
+  <url>https://github.com/sullis/dbos-java-playground</url>
 
   <licenses>
     <license>
@@ -28,9 +26,9 @@
   </developers>
 
   <scm>
-    <connection>scm:git:git://github.com/sullis/java-maven-template.git</connection>
-    <developerConnection>scm:git:ssh://github.com:sullis/java-maven-template.git</developerConnection>
-    <url>https://github.com/sullis/java-maven-template/tree/main</url>
+    <connection>scm:git:git://github.com/sullis/dbos-java-playground.git</connection>
+    <developerConnection>scm:git:ssh://github.com:sullis/dbos-java-playground.git</developerConnection>
+    <url>https://github.com/sullis/dbos-java-playground/tree/main</url>
   </scm>
 
   <properties>
@@ -41,7 +39,6 @@
     <!-- Dependency Versions -->
     <assertj.version>4.0.0-M1</assertj.version>
     <awaitility.version>4.3.0</awaitility.version>
-    <aws-sdk.version>2.42.22</aws-sdk.version>
     <commons-io.version>2.21.0</commons-io.version>
     <commons-lang3.version>3.20.0</commons-lang3.version>
     <guava.version>33.5.0-jre</guava.version>
@@ -74,13 +71,6 @@
         <groupId>org.junit</groupId>
         <artifactId>junit-bom</artifactId>
         <version>${junit-bom.version}</version>
-        <type>pom</type>
-        <scope>import</scope>
-      </dependency>
-      <dependency>
-        <groupId>software.amazon.awssdk</groupId>
-        <artifactId>bom</artifactId>
-        <version>${aws-sdk.version}</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
@@ -151,12 +141,6 @@
     <dependency>
       <groupId>ch.qos.logback</groupId>
       <artifactId>logback-classic</artifactId>
-      <version>${logback.version}</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>ch.qos.logback</groupId>
-      <artifactId>logback-core</artifactId>
       <version>${logback.version}</version>
       <scope>test</scope>
     </dependency>
