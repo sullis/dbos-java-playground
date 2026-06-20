@@ -6,15 +6,15 @@ import dev.dbos.transact.DBOS;
 import dev.dbos.transact.config.DBOSConfig;
 
 import org.junit.jupiter.api.Test;
-import org.testcontainers.containers.PostgreSQLContainer;
 import org.testcontainers.junit.jupiter.Container;
 import org.testcontainers.junit.jupiter.Testcontainers;
+import org.testcontainers.postgresql.PostgreSQLContainer;
 
 @Testcontainers
 class SimpleWorkflowTest {
 
   @Container
-  static PostgreSQLContainer<?> postgres = new PostgreSQLContainer<>("postgres:18");
+  static PostgreSQLContainer postgres = new PostgreSQLContainer("postgres:18");
 
   @Test
   void workflowRunsAgainstPostgresContainer() {
